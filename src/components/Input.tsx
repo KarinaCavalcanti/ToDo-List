@@ -11,14 +11,12 @@ export function Input() {
         type="text"
         placeholder="Adicione uma nova tarefa"
       />
-      <button>
+      <a href="#">
         Criar
-        <span>
-          <PlusCircle
-            size={16}
-          />
-        </span>
-      </button>
+        <PlusCircle
+          size={16}
+        />
+      </a>
     </div>
   )
 }

@@ -1,0 +1,67 @@
+.divContainer {
+  width: 736px;
+  margin: 4rem auto;
+}
+
+.divTasksInfo {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+}
+
+.divTasksInfo p:first-child {
+  color: var(--blue);
+  font-size: .875rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: .5rem;
+}
+
+.divTasksInfo p:last-child {
+  color: var(--purple);
+  font-size: .875rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: .5rem;
+}
+
+.divTasksInfo span:first-child, span:last-child {
+  font-size: .675rem;
+  padding: .5rem;
+  background: var(--gray-400);
+  border-radius: 8px;
+  color: var(--gray-200);
+}
+
+.divTasksList {
+  border-top: 1px solid var(--gray-400);
+  border-radius: 8px 8px 0px 0px;
+  padding-top: 4rem;
+}
+
+.divNoTasks {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  color: var(--gray-400);
+}
+
+.divNoTasks div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: .5rem;
+  color: var(--gray-300);
+}
+
+.divNoTasks p:first-child {
+  font-weight: 700;
+}

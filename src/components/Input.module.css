@@ -2,12 +2,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: -2rem;
+  margin-top: -1.75rem;
 }
 
 .div input {
   height: 54px;
-  width: 80%;
+  width: 638px;
   background: var(--gray-500);
   border: 1px solid var(--gray-700);
   border-radius: 8px;
@@ -15,10 +15,17 @@
   margin-right: .5rem;
 }
 
-.div button {
+.div a {
   background: var(--blue-dark);
   color: var(--white-500);
   height: 54px;
   border-radius: 8px;
   padding: 1rem;
+  display: block;
+  text-decoration: none;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .5rem;
 }
