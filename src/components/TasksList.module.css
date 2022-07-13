@@ -1,6 +1,55 @@
+.divInput {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -1.75rem;
+}
+
+.divInput input {
+  height: 54px;
+  width: 638px;
+  background: var(--gray-500);
+  border: 1px solid var(--gray-700);
+  border-radius: 8px;
+  padding: 1rem;
+  margin-right: .5rem;
+  color: var(--white);
+}
+
+.divInput button {
+  background: var(--blue-dark);
+  color: var(--white-500);
+  height: 54px;
+  border-radius: 8px;
+  padding: 1rem;
+  display: block;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .5rem;
+}
+
+.divInput button:not(:disabled):hover {
+  background: var(--blue);
+  transition: background .5s;
+}
+
+.divInput button:disabled {
+  opacity: .7;
+  cursor: not-allowed;
+}
+
 .divContainer {
   width: 736px;
   margin: 4rem auto;
+}
+
+.divContainer @media(max-width: 768px) {
+  width: 736px;
 }
 
 .divTasksInfo {
