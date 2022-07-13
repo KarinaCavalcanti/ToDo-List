@@ -29,3 +29,8 @@
   justify-content: center;
   gap: .5rem;
 }
+
+.div a:hover {
+  background: var(--blue);
+  transition: background .5s;
+}

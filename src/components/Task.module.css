@@ -1,0 +1,27 @@
+.taskCard {
+  background: var(--gray-400);
+  padding: 1rem;
+  border-radius: 8px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: .75rem;
+}
+
+.container {
+  display: flex;
+  gap: .75rem;
+}
+
+.button {
+  background: none;
+  border: none;
+  color: var(--gray-300);
+  cursor: pointer;
+}
+
+.button:hover {
+  color: var(--red);
+  transition: color .5s;
+}

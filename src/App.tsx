@@ -1,6 +1,6 @@
 import { Header } from './components/Header';
 import { Input } from './components/Input';
-import { Tasks } from './components/Tasks';
+import { TasksList } from './components/TasksList';
 
 import './global.css';
 
@@ -9,7 +9,7 @@ function App() {
     <>
       <Header />
       <Input />
-      <Tasks />
+      <TasksList />
     </>
   )
 }
