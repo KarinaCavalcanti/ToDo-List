@@ -1,0 +1,53 @@
+.taskListInfos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+.taskListInfos p {
+  font-size: .875rem;
+  font-weight: 700;
+
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+}
+
+.taskListInfos p:first-child {
+  color: var(--blue);
+}
+
+.taskListInfos p:last-child {
+  color: var(--purple);
+}
+
+.taskListInfos p > span {
+  background: var(--gray-400);
+  font-size: .75rem;
+  border-radius: 999px;
+  padding: .125rem .5rem;
+  color: var(--white);
+}
+
+.noTask {
+  color: var(--gray-300);
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--gray-400);
+  border-radius: 8px 8px 0px 0px;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.noTask svg {
+  color: var(--gray-400);
+}
+
+.noTask div p:first-child {
+  font-weight: 700;
+}

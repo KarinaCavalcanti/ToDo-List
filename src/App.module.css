@@ -1,0 +1,9 @@
+.body {
+  max-width: 46rem;
+  margin: -1.75rem auto;
+  padding: 0 1rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}

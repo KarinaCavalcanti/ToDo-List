@@ -1,0 +1,33 @@
+.task {
+  background: var(--gray-400);
+  padding: 1rem;
+  border-radius: 8px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: .75rem;
+}
+
+.task + .task {
+  margin-top: .75rem;
+}
+
+.task label {
+  font-size: .875rem;
+  line-height: 1.25rem;
+  color: var(--gray-100);
+}
+
+.task button {
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  line-height: 0;
+  color: var(--gray-300);
+}
+
+.task button:hover {
+  color: var(--red);
+  transition: color .2s;
+}
