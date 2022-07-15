@@ -9,12 +9,9 @@ export function App() {
   return (
     <div>
       <Header />
-      <div className={styles.body}>
-        <Input />
-        <main>
-          <TaskList />
-        </main>
-      </div>
+      <main className={styles.main}>
+        <TaskList />
+      </main>
     </div>
   );
 }

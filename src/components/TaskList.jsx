@@ -1,10 +1,12 @@
 import { Clipboard } from 'phosphor-react';
+import { Input } from './Input';
 import { Task } from './Task';
 import styles from './TaskList.module.css';
 
 export function TaskList() {
   return (
     <>
+    <Input />
       <div className={styles.taskListInfos}>
         <p>
           Tarefas criadas
