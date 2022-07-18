@@ -10,12 +10,6 @@
   gap: .75rem;
 }
 
-.divCheckbox {
-  display: flex;
-  align-items: center;
-  gap: .5rem;
-}
-
 .container {
   display: block;
   position: relative;
@@ -23,6 +17,7 @@
   cursor: pointer;
   font-size: .875rem;
   line-height: 1.25rem;
+  word-break: break-word;
 }
 
 .completed {
