@@ -14,17 +14,19 @@ export function Task({ id, content, isCompleted, onDeleteTask, onCompleteTask })
   return (
     <div className={styles.task}>
       <div className={styles.divCheckbox}>
-        <input
-          type="checkbox"
-          id={id}
-          key={id}
-          defaultChecked={isCompleted}
-          onChange={handleCompleteTask}
-        />
         <label
           htmlFor={id}
+          className={styles.container}
         >
-          {content}
+          <input
+            type="checkbox"
+            id={id}
+            key={id}
+            defaultChecked={isCompleted}
+            onChange={handleCompleteTask}
+          />
+          <span className={styles.checkmark}></span>
+          <p className={isCompleted ? styles.completed : ""}>{content}</p>
         </label>
       </div>
       <button
