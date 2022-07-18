@@ -1,10 +1,14 @@
 import { Trash } from 'phosphor-react';
 import styles from './Task.module.css';
 
-export function Task({ id, content, isCompleted, onDeleteTask }) {
+export function Task({ id, content, isCompleted, onDeleteTask, onCompleteTask }) {
 
   function handleDeleteTask() {
     onDeleteTask(id)
+  }
+
+  function handleCompleteTask() {
+    onCompleteTask(id)
   }
 
   return (
@@ -15,6 +19,7 @@ export function Task({ id, content, isCompleted, onDeleteTask }) {
           id={id}
           key={id}
           defaultChecked={isCompleted}
+          onChange={handleCompleteTask}
         />
         <label
           htmlFor={id}

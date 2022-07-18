@@ -18,7 +18,7 @@ export function TaskList() {
       { 
         id: uuidv4(), 
         content: newTask, 
-        isCompleted: true
+        isCompleted: false
       }
     ])
 
@@ -35,6 +35,16 @@ export function TaskList() {
     })
 
     setTasks(tasksWithoutDeletedOne)
+  }
+
+  function completeTask(taskToComplete) {
+    const completedTask = tasks.map(task => {
+      if(taskToComplete === task.id) {
+        return {...task, isCompleted: !task.isCompleted}
+      }
+      return task;
+    });
+    setTasks(completedTask)
   }
 
   return (
@@ -66,6 +76,7 @@ export function TaskList() {
               isCompleted={task.isCompleted}
               content={task.content}
               onDeleteTask={deleteTask}
+              onCompleteTask={completeTask}
             />
           )
         })}
